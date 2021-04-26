@@ -1,0 +1,33 @@
+body {
+    background: rgb(22, 22, 22);
+    color: white;
+}
+
+.formochka {
+    margin: 0 auto;
+    margin-top: 25vh;
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DeM {
+    font-size: 62px;
+}
+
+.data {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ya_ssilka {
+    text-decoration: none;
+    color: rgb(255, 187, 61);
+}

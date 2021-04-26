@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    color: white;
+    }
+    
+    body {
+    margin: 0px;
+    background: url('{{ back_url }}') center top/cover;
+    }
+    
+    .adding {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 40vh;
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        justify-content: space-between;
+        width: 30%;
+        font-size: 42px;
+    }
+
+    .btn {
+        background: rgba(0, 87, 87, 0.7);
+        border-radius: 15px;
+        border: none;
+        box-shadow: 3px 3px 10px black;
+    }
+
+</style>
+</head>
+<body>
+    <form action="" method="post" class="adding">
+        <span>
+        Введите логин друга: <br>
+        <input type="text" name="name">
+        </span>
+        <input type="submit" value="Добавить" class="btn">
+    </form>
+</body>
+</html>

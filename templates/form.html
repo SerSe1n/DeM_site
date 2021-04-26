@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_style.css">
+    <title>Document</title>
+    <style>
+        body {
+    background: rgb(22, 22, 22);
+    color: white;
+}
+
+.formochka {
+    margin: 0 auto;
+    margin-top: 25vh;
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.DeM {
+    font-size: 62px;
+}
+
+.data {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ya_ssilka {
+    text-decoration: none;
+    color: rgb(255, 187, 61);
+}
+    </style>
+</head>
+<body>
+    <form action="" method="post" class="formochka">
+        <h1 class="DeM">DeM</h1>
+        <div class="data">
+            <div>
+                Введите логин:
+                <input type="text" name="username">
+            </div>
+            <div>
+                Введите пароль:
+                <input type="password" name="password">
+            </div>
+        </div>
+        <input type="submit" value="Войти">
+        Забыли логин или пароль?
+        <p>Нет аккаунта? <a href="register.html" class="ya_ssilka">Зарегистрироваться</a></p>
+    </form>
+</body>
+</html>

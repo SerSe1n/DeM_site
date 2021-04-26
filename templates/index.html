@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DeM</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    background: rgb(22, 22, 22);
+}
+
+.nav_bar {
+    background-color: #111111;
+    height: 5vh;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav_list {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 42px;
+    margin-right: 100px;
+}
+
+.auth_btn {
+    width: 60%;
+    margin-left: 100px;
+    border-radius: 15px;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.header_motivation {
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 42px;
+}
+
+
+/* SECTION CONTAINER */
+section {
+    background-color: #111111;
+    height: 100vh;
+}
+
+.about_us {
+    font-size: 42px;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.arguments {
+    list-style: none;
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 36px;
+}
+
+.download {
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+.support {
+    text-align: center;
+    padding-top: 20vh;
+    font-size: 42px;
+}
+
+footer {
+    background: rgb(15, 15, 15);
+    text-align: center;
+    height: 5vh;
+    padding: 3%;
+}
+/* END OF CONTAINER */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <ul class="nav_list">
+                <div class="container header_container">
+
+                    <div class="logo">
+                        DeM
+                    </div>
+
+                    <a href="#first"><li>Почему DeM?</li></a> 
+                    <a href="#second"><li>Скачать</li></a>
+                    <a href="#third"><li>Поддержка</li></a>
+
+                    <div class="auth">
+
+                        <button class="auth_btn"><a href="form.html">Вход/Регистрация</a></button>
+
+                    </div>
+
+                </div>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="header_motivation">
+                <h1>Самый лучший мессенджер</h1>
+                <div class="header_unmotivation">Общайся со всеми своими друзьями в DeM</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h1 class="about_us" id="first">Почему ты должен выбрать именно DeM?</h1>
+        <div class="container">
+            <ul class="arguments">
+                <li class="argument">
+                    <div class="first_arg">
+                        Здесь приятно общаться!
+                    </div>
+                </li>
+                <li class="argument">
+                    <div class="second_arg">
+                        Удобный интерфейс
+                    </div>
+                </li>
+                <li class="argument">
+                    <div class="third_arg">
+                        Приятная атмосфера
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="download" id="second">
+            <h1 class="download_h1">Скачать</h1>
+            <p>Пока невозможно ;)</p>
+        </div>
+
+        <div class="support" id="third">
+            <h1 class="support_h1">Поддержка</h1>
+            <p>Еще спит</p>
+        </div>
+    </section>
+
+    <footer>
+        ©SerSe1n   
+    </footer>
+</body>
+</html>

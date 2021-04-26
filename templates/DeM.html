@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DeM_style.css">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0px;
+    background: url('{{ back_url }}') center top/cover;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.user {
+    width: 22%;
+    margin-top: 42.5vh;
+    font-size: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    width: 15vh;
+    height: 15vh;
+    background: rgba(0, 87, 87, 0.7);
+    border-radius: 50%;
+}
+
+.chats:hover {
+    top: 55vh;
+    cursor: pointer;
+}
+
+.friends:hover {
+    top: 18vh;
+    cursor: pointer;
+}
+
+.settings:hover {
+    top: 3vh;
+    cursor: pointer;
+}
+
+.chats, .friends, .settings {
+    width: 30vh;
+    height: 30vh;
+    background: rgba(0, 87, 87, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    top: 57vh;
+    left: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+    transition-duration: 0.3s;
+    border: none;
+    box-shadow: 3px 3px 10px black;
+}
+
+.chats a, .friends a, .settings a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    color: white;
+}
+
+.friends {
+    top: 20vh;
+    left: 45%;
+}
+
+.settings {
+    top: 5vh;
+    left: 70%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <div class="photo">
+
+            </div>
+
+            <div class="username">
+                {{ username }}
+            </div>
+        </div>
+
+        <a href="chats.html">
+            <button class="chats">
+                Chats
+            </button>
+        </a>
+        
+        <a href="friends.html">
+            <button class="friends">
+                Friends
+            </button>
+        </a>
+
+        <a href="#">
+            <button class="settings">
+                Settings
+            </button>
+        </a>
+    </div>
+</body>
+</html>
